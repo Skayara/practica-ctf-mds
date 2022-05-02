@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pwn:
+    build: .
+    restart: always
+    ports:
+      - 9993:9999
+    environment:
+      - CHALLENGE_FLAG=URJC{change_me}

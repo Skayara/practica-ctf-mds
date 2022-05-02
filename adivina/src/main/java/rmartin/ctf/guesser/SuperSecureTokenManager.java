@@ -56,6 +56,7 @@ public class SuperSecureTokenManager {
             boolean check = token == currentToken;
             usedTokens.add(currentToken);
             currentToken = random.nextInt(1_234_000_000);
+            log.info(String.format("Token -> %s", currentToken));
             return check;
         }
     }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/content/example-tsp/TSP.iml" filepath="$PROJECT_DIR$/content/example-tsp/TSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/content/template/__RNAME__.iml" filepath="$PROJECT_DIR$/content/template/__RNAME__.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adivina/guesser.iml" filepath="$PROJECT_DIR$/adivina/guesser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/content/core/mork.iml" filepath="$PROJECT_DIR$/content/core/mork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/content/mork-parent.iml" filepath="$PROJECT_DIR$/content/mork-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/practica-ctf-mds.iml" filepath="$PROJECT_DIR$/.idea/practica-ctf-mds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/selenium-java/selenium-practice.iml" filepath="$PROJECT_DIR$/selenium-java/selenium-practice.iml" />
+    </modules>
+  </component>
+</project>

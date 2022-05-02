@@ -1,0 +1,8 @@
+version: '3'
+services:
+  pythonagenda:
+    build: .
+    restart: always
+    ports:
+      - 9994:9999
+

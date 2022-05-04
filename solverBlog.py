@@ -11,18 +11,17 @@ def visita(enlaces, pattern, count, visitadas):
             enlace = i.find_element(By.CSS_SELECTOR,'a').get_attribute('href')
         
             if enlace not in visitadas and'#' not in enlace and enlace.startswith('http://ctf-vulnerable.numa.host:8040/notice'):
-                        #i.click()
-                        print("enlace -> " + enlace)
-                        driver.get(enlace)
-                        visitadas.add(enlace)
-                        text = driver.find_element(By.CLASS_NAME, 'article-post').text
-                        results = re.findall(pattern, text)
+                print("enlace -> " + enlace)
+                driver.get(enlace)
+                visitadas.add(enlace)
+                text = driver.find_element(By.CLASS_NAME, 'article-post').text
+                results = re.findall(pattern, text)
 
-                        for match in results:
-                            count = count + 1
-                            print(match)
+                for match in results:
+                    count = count + 1
+                    print(match)
 
-                        print(count)
+                print(count)
             else:
                 print("Ya visitado")
             return count + visita(enlaces, pattern, count, visitadas)
@@ -33,10 +32,8 @@ def visita(enlaces, pattern, count, visitadas):
 driver = webdriver.Chrome()
 driver.get("http://ctf-vulnerable.numa.host:8040/") 
 
-total = int()
-enlace = driver
 pattern = "URJC"
-count = int = 0
+count = 0
 visitadas = set()
 enlaces = []
 

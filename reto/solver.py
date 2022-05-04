@@ -3,14 +3,18 @@ from selenium.webdriver.common.by import By
 
 
 driver = webdriver.Chrome()
-driver.get("file:///home/sky/Documentos/content/whack-a-mole/index.html") # Acceder a la aplicación web
+driver.get("file:///home/sky/Documentos/content/practica-ctf-mds/reto/index.html") # Acceder a la aplicación web
 
 
-while True:
-    try:
+try:
+    elements = driver.find_elements(By.CLASS_NAME, "text-display")
+    print("p3")
+    cuadro = driver.find_element(By.CLASS_NAME,"text-input")
+    print("p")
+    for i in elements:
+        print("Prueba")
+        cuadro.send_keys(i.text)
+        print(i.text)
 
-        mole = driver.find_element(By.CLASS_NAME, "text-display")
-        mole.click()
-
-    except Exception:
-        pass
+except Exception:
+    pass
